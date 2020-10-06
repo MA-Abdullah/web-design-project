@@ -19,7 +19,14 @@
 .navbar a:hover {
   background-color: #D3D3D3;
 }
-
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
 /* Current/active navbar link */
 .active {
   background-color: #D3D3D3;
