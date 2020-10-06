@@ -1,6 +1,7 @@
 /* Style the navigation bar */
 .navbar {
   width: 100%;
+  height: 13mm;
   background-color:#C0C0C0;
   overflow: auto;
 }
@@ -17,7 +18,7 @@
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-  background-color: #D3D3D3;
+  background-color:#413e3e80;
 }
 .navbar input[type=text] {
   float: right;
@@ -29,7 +30,8 @@
 }
 /* Current/active navbar link */
 .active {
-  background-color: #D3D3D3;
+  background-color: #c0c0c0;
+  
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
