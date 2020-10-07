@@ -49,9 +49,13 @@ main, html {
 
   /* Full height */
   height: 100%; 
-
+  opacity: 0.15;
+  filter: saturate(8);
   /* Center and scale the image nicely */
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  
 }
