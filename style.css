@@ -13,6 +13,7 @@ main > .container {
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
+  color: #000;
 }
 
 code {
@@ -100,7 +101,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
+  background-color: black;
   color: white;
 }
 
@@ -131,7 +132,7 @@ html {
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: black;
 }
 
 @media screen and (max-width: 650px) {
