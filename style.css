@@ -225,6 +225,7 @@ html {
 .card {
   box-shadow: 0 2px px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  
 }
 
 .about-section {
@@ -325,4 +326,17 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+
+.mapouter{position:relative;
+  text-align:right;
+  height:500px;
+  width:600px;
+  right: 5cm;
+}
+.gmap_canvas {overflow:hidden; 
+  background:none!important;
+  height:500px;
+  width:600px;
+  
 }
