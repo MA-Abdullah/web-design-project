@@ -55,11 +55,6 @@ div.navbar-collapse ul.navbar-nav li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  background-image: url("web_images/background.jpg");
-  opacity: 0.15;
-  filter: saturate(8);
-
 }
 .bg {
 
@@ -204,5 +199,6 @@ div.content {
   .sidebar a {
     text-align: center;
     float: none;
+    
   }
 }
