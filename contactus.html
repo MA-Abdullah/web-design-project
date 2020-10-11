@@ -35,7 +35,7 @@
           <a class="nav-link" href="reservation.html">Resevation <i class="fa fa-fw fa-plane"></i></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="hotels.html">Hotels <i class="fa fa-fw fa-hotel"></i></a>
+          <a class="nav-link" href="contactus.html">Contact us <i class="fa fa-fw fa-phone"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="aboutus.html">About us <i class="fa fa-fw fa-info-circle"></i></a>
@@ -57,13 +57,73 @@
 </header>
 
 <!-- Begin page content -->
-<main role="main" class="flex-shrink-0">
 
+<div class="container-countactus">
+  <link rel="stylesheet" href="css/contactus.css">
+  <link rel="js" href="assets/dist/js/google.js">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Location</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+  </body>
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
 
-</main>
-
-
-<!-- footer satrts her -->
+<!--begin footer -->
 
 <footer class="footer mt-auto py-3">
   <div class="container">
