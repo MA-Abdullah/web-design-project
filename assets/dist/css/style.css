@@ -56,9 +56,6 @@ div.navbar-collapse ul.navbar-nav li {
   background-repeat: no-repeat;
   background-size: cover;
 
-  background-image: url("web_images/background.jpg");
-  opacity: 0.15;
-  filter: saturate(8);
 
 }
 .bg {
