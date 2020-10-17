@@ -114,6 +114,24 @@
       </div>
       
 
+<p id="text">WARNING! Caps lock is ON.</p>
+
+<script>
+var input = document.getElementById("myInput");
+var text = document.getElementById("text");
+input.addEventListener("keyup", function(event) {
+
+if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none"
+  }
+});
+</script>
+
+</body>
+</html>
+
       <div class="mb-3">
         <label for="address">Address</label>
         <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
