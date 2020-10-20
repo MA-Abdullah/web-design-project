@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function formValidation() {
   var uid = document.registration.userid;
   var passid = document.registration.passid;
@@ -97,7 +96,7 @@ function ValidateEmail(uemail) {
     return false;
   }
 }
-=======
+
 function formValidation()
 {
 var uid = document.registration.userid;
@@ -223,5 +222,5 @@ uemail.focus();
 return false;
 }
 } 
->>>>>>> 931071d39778bffe6ae4f56fe082a6076ce5afdf
+
 

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" class="h-100">
-<<<<<<< HEAD
+
 
 <head>
   <meta charset="utf-8">
@@ -177,7 +177,8 @@
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
-=======
+  =======
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -195,157 +196,165 @@
     <link href="assets/dist/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+
   <body class="d-flex flex-column h-100">
     <header>
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#"><img src="web_images\logo.png" alt="logo" class="weblogo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span><i class="fa fa-fw fa-home"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="reservation.html">Reservation <i class="fa fa-fw fa-plane"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contactus.html">Contact us <i class="fa fa-fw fa-phone"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About us <i class="fa fa-fw fa-info-circle"></i></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="regestration.html">Regestration <span class="sr-only"></span><i class="fa fa-fw fa-sign-in"></i></a>
-        </li>
-      </ul>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#"><img src="web_images\logo.png" alt="logo" class="weblogo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span><i
+                  class="fa fa-fw fa-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservation.html">Reservation <i class="fa fa-fw fa-plane"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact us <i class="fa fa-fw fa-phone"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About us <i class="fa fa-fw fa-info-circle"></i></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="regestration.html">Regestration <span class="sr-only"></span><i
+                  class="fa fa-fw fa-sign-in"></i></a>
+            </li>
+          </ul>
 
-      <a class="btn btn-outline-success mr-sm-2" href="login.html">Login</a>
+          <a class="btn btn-outline-success mr-sm-2" href="login.html">Login</a>
 
-      <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <a href="#"><i class="fa fa-search"></i></a>
-      </form>
-    </div>
-  </nav>
-</header>
-<!--begin page content-->
-<link rel="stylesheet" href="css/regestration.css">
-</head>
-
-<body class="bg-light">
-  <div class="container">
-    <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="web_images/logo.png" alt="" width="72" height="72">
-      <h2> Regestration form </h2>
-      <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group
-        has validation state that can be triggered by attempting to submit the form without completing it.</p>
-    </div>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!--begin page content-->
+    <link rel="stylesheet" href="css/regestration.css">
     </head>
 
-    <body onload="document.registration.userid.focus();">
-      
-      <link rel='stylesheet' href='css/regestration.css' type='text/css' />
-      <script src="sample-registration-form-validation.js"></script>
-      <form name='registration' onSubmit="return formValidation();">
-        <ul>
-          <li><label for="userid">Name </label></li>
-          <li><input type="text" name="userid" size="40px" /></li>
-          <li><label for="passid">Password</label></li>
-          <li><input type="password" name="passid" size="40px" /></li>
-          <li><label for="username">Username</label></li>
-          <li><input type="text" name="username" size="40px" /></li>
-          <li><label for="address">Address</label></li>
-          <li><input type="text" name="address" size="40px" /></li>
-          <li><label for="country">Country</label></li>
-          <li><select name="country"  >
-              <option selected="" value="Default"> select country </option>
-              <option value="AF"> Saudi Arabia </option>
-              <option value="AL"> Emarat </option>
-              <option value="DZ"> Kuwait </option>
-              <option value="AS"> Qatar </option>
-              <option value="AD"> Bahrain </option>
-              <option value="AD"> Oman </option>
-            </select></li>
-          <li><label for="zip"> ZIP </label></li>
-          <li><input type="text" name="zip" size="40px"/></li>
-          <li><label for="email">Email</label></li>
-          <li><input type="text" name="email" size="40px" /></li>
-          <li><label></label></li>
-          <li><input type="checkbox" name="en" value="en" checked /><span> Save this information for next
-              reservation</span>
-          </li>
+    <body class="bg-light">
+      <div class="container">
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="web_images/logo.png" alt="" width="72" height="72">
+          <h2> Regestration form </h2>
+          <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form
+            group
+            has validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+        </head>
 
-          <li><label for="desc">About:</label></li>
-          <li><textarea name="desc" id="desc"></textarea></li>
-          <li><input type="submit" name="submit" value="Continue for regestration" /></li>
-        </ul>
+        <body onload="document.registration.userid.focus();">
 
-      </form>
-  </div>
-  </div>
+          <link rel='stylesheet' href='css/regestration.css' type='text/css' />
+          <script src="sample-registration-form-validation.js"></script>
+          <form name='registration' onSubmit="return formValidation();">
+            <ul>
+              <li><label for="userid">Name </label></li>
+              <li><input type="text" name="userid" size="40px" /></li>
+              <li><label for="passid">Password</label></li>
+              <li><input type="password" name="passid" size="40px" /></li>
+              <li><label for="username">Username</label></li>
+              <li><input type="text" name="username" size="40px" /></li>
+              <li><label for="address">Address</label></li>
+              <li><input type="text" name="address" size="40px" /></li>
+              <li><label for="country">Country</label></li>
+              <li><select name="country">
+                  <option selected="" value="Default"> select country </option>
+                  <option value="AF"> Saudi Arabia </option>
+                  <option value="AL"> Emarat </option>
+                  <option value="DZ"> Kuwait </option>
+                  <option value="AS"> Qatar </option>
+                  <option value="AD"> Bahrain </option>
+                  <option value="AD"> Oman </option>
+                </select></li>
+              <li><label for="zip"> ZIP </label></li>
+              <li><input type="text" name="zip" size="40px" /></li>
+              <li><label for="email">Email</label></li>
+              <li><input type="text" name="email" size="40px" /></li>
+              <li><label></label></li>
+              <li><input type="checkbox" name="en" value="en" checked /><span> Save this information for next
+                  reservation</span>
+              </li>
 
+              <li><label for="desc">About:</label></li>
+              <li><textarea name="desc" id="desc"></textarea></li>
+              <li><input type="submit" name="submit" value="Continue for regestration" /></li>
+            </ul>
 
-
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-<script src="validation.js"></script>
-</body>
-
-<!--begin footer-->
-<footer class="footer mt-auto py-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md">
-        <img class="mb-2" src="web_images\logo.png" alt="" width="24" height="24">
-        <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+          </form>
       </div>
-      <div class="col-6 col-md">
-        <h5>Home</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="home.html">Our mission</a></li>
-          <li><a class="text-muted" href="home.html">Globel time</a></li>
-
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Reservation</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="reservation.html">Book a flight</a></li>
-          <li><a class="text-muted" href="reservation.html">Products</a></li>
-
-      </div>
-      <div class="col-6 col-md">
-        <h5>About us</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="aboutus.html">Team</a></li>
-          <li><a class="text-muted" href="aboutus.html">Locations</a></li>
       </div>
 
-      <div class="col-6 col-md" Add icon library -->
-        <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/home.css">
-        <!-- Add font awesome icons -->
-        <a href="https://ar-ar.facebook.com/" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/home" class="fa fa-twitter"></a>
-        <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
 
 
-        </ul>
       </div>
-    </div>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+      <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="validation.js"></script>
+    </body>
 
->>>>>>> 931071d39778bffe6ae4f56fe082a6076ce5afdf
+    <!--begin footer-->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="web_images\logo.png" alt="" width="24" height="24">
+            <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Home</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="home.html">Our mission</a></li>
+              <li><a class="text-muted" href="home.html">Globel time</a></li>
+
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Reservation</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="reservation.html">Book a flight</a></li>
+              <li><a class="text-muted" href="reservation.html">Products</a></li>
+
+          </div>
+          <div class="col-6 col-md">
+            <h5>About us</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="aboutus.html">Team</a></li>
+              <li><a class="text-muted" href="aboutus.html">Locations</a></li>
+          </div>
+
+          <div class="col-6 col-md" Add icon library -->
+            <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/home.css">
+            <!-- Add font awesome icons -->
+            <a href="https://ar-ar.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/home" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    >>>>>>> 931071d39778bffe6ae4f56fe082a6076ce5afdf
+
 </html>
