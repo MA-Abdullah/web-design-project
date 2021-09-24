@@ -30,7 +30,7 @@ my Response
 
         })
         .done(function(resp) {
-            $('#mydata').text(resp)
+            $('#mydata').text(resp.data.users)
             console.log(resp)
         })
         .fail()
