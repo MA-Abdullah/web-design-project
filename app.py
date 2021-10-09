@@ -1,19 +1,14 @@
-print ('hello')
-
-
-from logging import debug
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-def Home ():
-    x=1
-    y=55
-    return f"""<h1 style='coler:red' >Hello world!</h1> 
-                <h1> {x+y} </h1>"""
+@app.route("/home")
+def hello():
+    return render_template('home.html')
 
+@app.route("/about")
+def about():
+    return render_template('about.html')
 
-
-app.run (debug=True)
-
-print('good bey ')   
+if __name__ == '__main__':
+    app.run(debug=True)
