@@ -69,6 +69,21 @@
   } ) 
 </script>
      
+<script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      alert($("#Book").attr("href"));
+    });
+  });
+  </script>
+  </head>
+  <body>
+  
+  <p><a href="https://www.booking.com/" id="Book">booking.com</a></p>
+  
+  <button>Show </button>
+
+
 
 
 
@@ -85,6 +100,8 @@
   <!-- Custom styles for this template -->
   <link href="css/login.css" rel="stylesheet">
   </head>
+
+  
 
   <body class="text-center">
     <form class="form-signin">
