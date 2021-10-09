@@ -29,9 +29,9 @@ my Response
             type:'GET',
             url:'https://reqres.in/api/users/3', 
 
-        })
+        }) 
         .done(function(resp) {
-            $('#mydata').text(resp.data.users)
+            $('#mydata').html( '<img src= " ' + resp.data.avatar + ' " > ')
             console.log(resp)
         })
         .fail()
@@ -41,3 +41,4 @@ my Response
 </script>
 
   </body>
+</html>
