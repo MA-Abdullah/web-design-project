@@ -117,35 +117,7 @@
           </div>
         </form>
     </div>
-<body>
 
-
-    <button id="myButton">Continue for regestration </button>
-
-    
-
-    </div>
-    <script>
-  
-      $("#myButton").click(function(){ 
-           $.ajax({
-               type:'GET',
-               url:'https://reqres.in/api/users/3', 
-   
-           })
-           .done(function(resp) {
-               $('#mydata').text(resp.data.users)
-               console.log(resp)
-           })
-           .fail()
-           .always();
-   
-       });
-   </script>
-
-   </body>
-   </html?
-   
 
   <!--begin footer-->
   <footer class="footer mt-auto py-3">
