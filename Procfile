@@ -1,1 +1,1 @@
-web: python3 gnn.py
+web: python3 .py
