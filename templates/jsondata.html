@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en" class="h-100">
 
@@ -10,35 +9,37 @@
   <meta name="generator" content="Jekyll v4.1.1">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <body>
-<h1>load json data </h1>
 
-<button id="myButton">load My data </button>
+<body>
+  <h1>load json data </h1>
 
-<div id="mydata" style="background-color: white">
-my Response
-</div>
+  <button id="myButton">load My data </button>
+
+  <div id="mydata" style="background-color: white">
+    my Response
+  </div>
 
 
 
 
-<script>
-  
-   $("#myButton").click(function(){ 
-        $.ajax({
-            type:'GET',
-            url:'https://reqres.in/api/users/3', 
+  <script>
 
-        }) 
-        .done(function(resp) {
-            $('#mydata').html( '<img src= " ' + resp.data.avatar + ' " > ')
-            console.log(resp)
+    $("#myButton").click(function () {
+      $.ajax({
+        type: 'GET',
+        url: 'https://reqres.in/api/users/3',
+
+      })
+        .done(function (resp) {
+          $('#mydata').html('<img src= " ' + resp.data.avatar + ' " > ')
+          console.log(resp)
         })
         .fail()
         .always();
 
     });
-</script>
+  </script>
 
-  </body>
+</body>
+
 </html>
