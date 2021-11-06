@@ -3,19 +3,19 @@ app = Flask(__name__)
 
 posts = [
     {
-        'author': 'Corey Schafer',
+        'author': 'Corey Sr',
         'title': 'Blog Post 1',
         'content': 'First post content',
         'date_posted': 'April 20, 2018'
     },
     {
         'author': 'Jane Doe',
-        'title': 'Blog Post 2',
+        'title': 'Blog Post 2', 
         'content': 'Second post content',
         'date_posted': 'April 21, 2018'
     }
 ]
-
+   
 from json import dumps
 
 @app.route("/json_posts")
@@ -25,7 +25,9 @@ def json_posts():
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('home.html',title="HOME PAGE ")
+    return render_template('home.html',
+    title=" HOME PAGE " ,
+    myposts= posts)
      
 
 @app.route("/reservation")
@@ -50,11 +52,14 @@ def regestration():
 
 
 
-@app.route("/login")
-def login():
-    return render_template('login.html')
+@app.errorhandler(404)
+def err_404(error):
+   return render_template( '404.html' ), 404
 
 
+@app.route("/jsondata")
+def jsondata():
+    return render_template('jsondata.html')
 
 
 
