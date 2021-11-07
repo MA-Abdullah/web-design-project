@@ -62,6 +62,19 @@ def jsondata():
     return render_template('jsondata.html')
 
 
+from flask import request
+
+@app.route('/handle_data', methods=['POST', 'GET'])
+def handle_data():
+    us = request.form['username']
+    pw = request.form['password']
+    # your code...
+    return render_template(
+        'home.html',
+        posts=posts,
+        message=f"{us} is registered {pw}",
+        msg_class= "alert alert-success")
+
 
 app.run(debug=True)
     
