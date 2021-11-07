@@ -12,7 +12,7 @@ posts = [
         'author': 'Jane Doe',
         'title': 'Blog Post 2', 
         'content': 'Second post content',
-        'date_posted': 'April 21, 2018'
+        'date_posted': 'April 21, 2020'
     }
 ]
    
@@ -26,7 +26,7 @@ def json_posts():
 @app.route("/home")
 def home():
     return render_template('home.html',
-    title=" HOME PAGE " ,
+    title=" there no page  " ,
     myposts= posts)
      
 
@@ -74,6 +74,15 @@ def handle_data():
         posts=posts,
         message=f"{us} is registered {pw}",
         msg_class= "alert alert-success")
+
+
+
+@app.route("/")
+def hello():
+    return request.args.get("page_number")
+
+app.run(host="0.0.0.0", port=8080)
+
 
 
 app.run(debug=True)

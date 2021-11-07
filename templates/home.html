@@ -11,13 +11,13 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit iste ab repudian
 
 
 <body>
-{%if title %}   
-        <h1> class = "title" > {{title}}</h1> 
-        {%else%}  <h1> class = "title" > THERE IS NO TITLE </h1>
-        {%endif%}
-    </body>
-
-
+ {%for p in myposts%}
+    <div style="border:solid red 3px; ">
+    <h1>{{ p.title }}</h1>
+    <p> By {{ p.author }} on {{ p.date_posted }}</p>
+    </div>
+ {%endfor%}
+</body> 
     <script>
         $(document).ready(function () {
           console.log("welcome MA ");
