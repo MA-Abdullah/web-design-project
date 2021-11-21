@@ -2,7 +2,9 @@ from flask import Blueprint, render_template, request, flash, jsonify
 from flask_login import login_required, current_user
 from .models import Note
 from . import db
+from . import posts
 import json
+from json import dumps
 
 views = Blueprint('views', __name__)
 
@@ -51,3 +53,13 @@ def Fight_card():
 @views.route('/Tournament_bracket', methods=['POST'])
 def Tournament_bracket():
     return render_template("Tournament_bracket.html", user=current_user)
+
+
+@views.route("/json_posts")
+def json_posts():
+    return dumps(posts)
+
+
+@views.errorhandler(404)
+def err_404(error):
+   return render_template( '404.html' ), 404

@@ -6,6 +6,20 @@ from flask_login import LoginManager
 db = SQLAlchemy()
 DB_NAME = "database.db"
 
+posts = [
+    {
+        'author': 'Corey Sr',
+        'title': 'Blog Post 1',
+        'content': 'First post content',
+        'date_posted': 'April 20, 2018'
+    },
+    {
+        'author': 'Jane Doe',
+        'title': 'Blog Post 2', 
+        'content': 'Second post content',
+        'date_posted': 'April 21, 2020'
+    }
+]
 
 def create_app():
     app = Flask(__name__)
@@ -37,3 +51,4 @@ def create_database(app):
     if not path.exists('website/' + DB_NAME):
         db.create_all(app=app)
         print('Created Database!')
+

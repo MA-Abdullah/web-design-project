@@ -1,5 +1,4 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
-%}
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
 <ul class="list-group list-group-flush" id="notes">
   {% for note in user.notes %}
   <li class="list-group-item">
@@ -18,3 +17,10 @@
   </div>
 </form>
 {% endblock %}
+
+<script>
+  $(document).ready(function () {
+    console.log("welcome MA ");
+
+  })
+</script>
