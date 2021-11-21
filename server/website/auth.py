@@ -68,22 +68,12 @@ def sign_up():
 @auth.route('/Live', methods=['GET', 'POST'])
 def Live():
     if request.method == 'POST':
-        email = request.form.get('email')
-        password = request.form.get('password')
-
-        user = User.query.filter_by(email=email).first()
-        if user:
             return redirect(url_for('views.home'))
     return render_template("Live.html", user=current_user)
 
 @auth.route('/Fight_card', methods=['GET', 'POST'])
 def Fight_card():
     if request.method == 'POST':
-        email = request.form.get('email')
-        password = request.form.get('password')
-
-        user = User.query.filter_by(email=email).first()
-        if user:
             return redirect(url_for('views.home'))
     return render_template("Fight_card.html", user=current_user)
 
@@ -91,22 +81,12 @@ def Fight_card():
 @login_required
 def organizational_chart():
     if request.method == 'POST':
-        email = request.form.get('email')
-        password = request.form.get('password')
-
-        user = User.query.filter_by(email=email).first()
-        if user:
             return redirect(url_for('views.home'))
     return render_template("organizational_chart.html", user=current_user)
 
 @auth.route('/Tournament_bracket', methods=['GET', 'POST'])
 def Tournament_bracket():
     if request.method == 'POST':
-        email = request.form.get('email')
-        password = request.form.get('password')
-
-        user = User.query.filter_by(email=email).first()
-        if user:
             return redirect(url_for('views.home'))
     return render_template("Tournament_bracket.html", user=current_user)
 
