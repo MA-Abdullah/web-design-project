@@ -42,10 +42,6 @@ def delete_note():
 def Live():
     return render_template("Live.html", user=current_user)
 
-@views.route('/organizational_chart', methods=['POST'])
-def organizational_chart():
-    return render_template("organizational_chart.html", user=current_user)
-
 @views.route('/Fight_card', methods=['POST'])
 def Fight_card():
     return render_template("Fight_card.html", user=current_user)
