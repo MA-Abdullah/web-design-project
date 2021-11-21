@@ -33,64 +33,15 @@ To show or hide parts of the spreadsheet, edit the HTML on your site or blog.
       font-size: 30px;
     }
   </style>
-  <li class="flex-container">
-    <iframe width="1200" height="690" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_YfCEFF53GminTFCNCpiQcq8bzYiwMvYl_lUAtHAJ8JDyIbOeBscCd-8ej5nj3wdU6xe1i1Ih9R90/pubhtml?gid=0&amp;single=false&amp;widget=false&amp;headers=false"></iframe>
+  <li class="flex-container" align='center'>
+    <iframe width="925" height="690" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_YfCEFF53GminTFCNCpiQcq8bzYiwMvYl_lUAtHAJ8JDyIbOeBscCd-8ej5nj3wdU6xe1i1Ih9R90/pubhtml?gid=0&amp;single=false&amp;widget=false&amp;headers=false"></iframe>
   </li>
 </ul>
-<div id="cookieNotice" class="light display-right" style="display: none;">
-  <div id="closeIcon" style="display: none;">
+<div class="cookie-overlay p-4 d-none">
+  <div class="d-flex">
+    <div class="mr-3">By clicking the "Accept" button below, you agree to our <%= link_to 'Cookie Policy', cookies_url, target: '_blank' %>.</div>
+    <%= image_tag  "close.png", height: '21', class: 'close-cookies' %>
   </div>
-  <div class="title-wrap">
-      <h4>Cookie Consent</h4>
-  </div>
-  <div class="content-wrap">
-      <div class="msg-wrap">
-          <p>This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our  <a style="color:#115cfa;" href="/privacy-policy">Privacy Policy</a></p>
-          <div class="btn-wrap">
-              <button class="btn-primary" onclick="acceptCookieConsent();">Accept</button>
-          </div>
-      </div>
-  </div>
-  <script>
-      // Create cookie
-  function setCookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    let expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-
-  // Delete cookie
-  function deleteCookie(cname) {
-    const d = new Date();
-    d.setTime(d.getTime() + (24*60*60*1000));
-    let expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=;" + expires + ";path=/";
-  }
-
-  // Read cookie
-  function getCookie(cname) {
-    let name = cname + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-  }
-
-  // Set cookie consent
-  function acceptCookieConsent(){
-    deleteCookie('user_cookie_consent');
-    setCookie('user_cookie_consent', 1, 30);
-    document.getElementById("cookieNotice").style.display = "none";
-  }
-  </script>
+  <button class="btn btn-primary mt-3 accept-cookies">Accept</button>
 </div>
 {% endblock %}
