@@ -50,9 +50,9 @@ def organizational_chart():
 def Fight_card():
     return render_template("Fight_card.html", user=current_user)
 
-@views.route('/Tournament_bracket', methods=['POST'])
-def Tournament_bracket():
-    return render_template("Tournament_bracket.html", user=current_user)
+@views.route('/contact', methods=['POST'])
+def contact():
+    return render_template("contact.html", user=current_user)
 
 
 @views.route("/json_posts")

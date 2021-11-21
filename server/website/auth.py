@@ -88,11 +88,11 @@ def organizational_chart():
             return redirect(url_for('views.home'))
     return render_template("organizational_chart.html", user=current_user)
 
-@auth.route('/Tournament_bracket', methods=['GET', 'POST'])
-def Tournament_bracket():
+@auth.route('/contact', methods=['GET', 'POST'])
+def contact():
     if request.method == 'POST':
             return redirect(url_for('views.home'))
-    return render_template("Tournament_bracket.html", user=current_user)
+    return render_template("contact.html", user=current_user)
 
 @auth.route("/json_posts")
 def json_posts():
